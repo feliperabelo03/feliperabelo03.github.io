@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>fg(x)tecnologia - feliperabelo03</title>
+		<title>Felipe Rabelo</title>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     
         <link rel="stylesheet" href="preloader.css">
@@ -67,9 +67,12 @@
 
             #imagemContato{
                 border-radius: 22px;
+                max-width: 500px
             }
             #imagemContato img{
                 border-radius: 20px;
+                max-width: 500px
+                
             }
             .secao h2{
                 font-family: Georgia, serif;
@@ -115,7 +118,14 @@
                 background-color: dimgrey;
                 box-shadow: 0px 0px 10px 3px #555;
             }
-
+            
+            .secaoSobre .panel-info{
+                    max-width: 800px;
+                    margin: auto;
+                    margin-top: 20px
+            }
+            
+            
             .secaoServicos h2{
                 margin-bottom: 30px;
                 padding: 10px;
@@ -130,6 +140,10 @@
             .secaoPortfolio h2{
                 margin-bottom: 30px;
                 padding: 10px; 
+            }
+            
+            .secaoContato .container{
+                max-width: 900px;
             }
             
             .secaoContato h2{
@@ -156,8 +170,10 @@
             .accordion .panel-body{
                 font-size: 14px;
             }
-
-
+            
+            .panel-body h3{
+                text-align: center;
+            }
             
             #informatica{
                 background: rgba(0,191,255,0.5);
@@ -171,6 +187,10 @@
             #seguranca{
                 background: rgba(0,0,255,0.5);
                 min-height: 350px;
+            }
+            
+            @media (min-width: 992px){
+                .secaoContato .col-md-4 {float: right;}
             }
                 
 		</style>
@@ -230,7 +250,7 @@
         <header class="main_h">
 
             <div class="row">
-                <a class="logo" href="">fg(x)</a>
+                <a class="logo" href=""><span class="glyphicon glyphicon-user"></span></a>
 
                 <div class="mobile-toggle">
                     <span></span>
@@ -241,7 +261,7 @@
                 <nav>
                     <ul>
                         <li><a href=".secaoSobre">Sobre</a></li>
-                        <li><a href=".secaoServicos">Serviços</a></li>
+                        <li><a href=".secaoProjetos">Projetos</a></li>
                         <li><a href=".secaoPortfolio">Portfólio</a></li>
                         <li><a href=".secaoContato">Contato</a></li>
                     </ul>
@@ -254,14 +274,14 @@
         
 
         <div class="secaoHeader">        
-            <img src="images/imgHeader.png">
+            <img src="images/imgHeader1.png">
              <div class="floatingMessage zoomIn animated">
 				<div class="header">
 					<div class="head-wrap shift-text">
 						<div class="text-editor-wrap">
 							<div class="title-bar">
 								<span class="title">
-									fg(x) Site em construção!
+									f(x) Site em construção!
 								</span>
 							</div>
 							<div class="text-body">
@@ -274,118 +294,97 @@
       </div>
         </div>
             
-		<div class="secao secaoSobre">
-        <h2>Sobre</h2>    
-        
-		</div>
-        
-        
-        <div class="secao secaoServicos" style="min-height: 500px;">
+        <div class="secao secaoSobre">
             <div class="container">
-            <h2>Serviços</h2>
-            <div id="servicosConteudo">
-                <div id="informatica" class="container col-md-4 col-12 boxServicos">
-                    <h3>Informática <span><img src="images/icones/glyphicons-161-imac.png"></span></h3>
+                <h2>Sobre</h2>
 
-                    <div class="panel-group accordion" id="accordion1">
-                        <div class="panel panel-default">
-                            <div style="cursor:pointer" data-toggle="collapse" data-parent="#accordion1" href="#collapseInformatica1" class="panel-heading collapseInformatica">
-                                <h4 class="panel-title">
-                                  Manutenção <span class="glyphicon glyphicon-remove"></span>
-                                </h4>
-                            </div>
-                            <div id="collapseInformatica1" class="panel-collapse collapse in">
-                                <div class="panel-body">Texto manutenção</div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div style="cursor:pointer" data-toggle="collapse" data-parent="#accordion1" href="#collapseInformatica2" class="panel-heading collapseInformatica">
-                                <h4 class="panel-title">
-                                    Consultoria <span class="glyphicon glyphicon-plus"></span>
-                                </h4>
-                            </div>
-                            <div id="collapseInformatica2" class="panel-collapse collapse">
-                                <div class="panel-body">Texto consultoria</div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div style="cursor:pointer"  data-toggle="collapse" data-parent="#accordion1" href="#collapseInformatica3" class="panel-heading collapseInformatica">
-                                <h4 class="panel-title">
-                                    Redes e infraestrutura <span class="glyphicon glyphicon-plus"></span>
-                                </h4>
-                            </div>
-                            <div id="collapseInformatica3" class="panel-collapse collapse">
-                                <div class="panel-body">Texto redes e infraestrutura</div>
-                            </div>
-                        </div>
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Formação</h3>
                     </div>
-
+                    <div class="panel-body"> Bacharel em Sistemas de Informação, em 2016, na instituição Pontifícia Universidade Católica de Minas Gerais  </div>
                 </div>
-
-                <div id="programacao" class="container col-md-4 col-12 boxServicos">
-                    <h3>Programação <span><img src="images/icones/glyphicons-372-global.png"></span></h3>
-
-                    <div class="panel-group accordion" id="accordion2">
-                        <div class="panel panel-default">
-                            <div style="cursor:pointer" data-toggle="collapse" data-parent="#accordion2" href="#collapseProgramacao1" class="panel-heading collapseProgramacao">
-                                <h4 class="panel-title">
-                                  Aplicações web <span class="glyphicon glyphicon-remove"></span>
-                                </h4>
-                            </div>
-                            <div id="collapseProgramacao1" class="panel-collapse collapse in">
-                                <div class="panel-body">Texto aplicações web</div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div style="cursor:pointer" data-toggle="collapse" data-parent="#accordion2" href="#collapseProgramacao2" class="panel-heading collapseProgramacao">
-                                <h4 class="panel-title">
-                                    Desenvolvimento de apps <span class="glyphicon glyphicon-plus"></span>
-                                </h4>
-                            </div>
-                            <div id="collapseProgramacao2" class="panel-collapse collapse">
-                                <div class="panel-body">Texto desenvolvimento de apps</div>
-                            </div>
-                        </div>
+                
+                 <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Área de conhecimento</h3>
                     </div>
-                </div>
-
-                <div id="seguranca" class="container col-md-4 col-12 boxServicos">
-                    <h3>Segurança <span><img src="images/icones/glyphicons-204-lock.png"></span></h3>
-
-                    <div class="panel-group accordion" id="accordion3">
-                        <div class="panel panel-default">
-                            <div style="cursor:pointer" data-toggle="collapse" data-parent="#accordion3" href="#collapseSeguranca1" class="panel-heading collapseSeguranca">
-                                <h4 class="panel-title">
-                                  Automação <span class="glyphicon glyphicon-remove"></span>
-                                </h4>
-                            </div>
-                            <div id="collapseSeguranca1" class="panel-collapse collapse in">
-                                <div class="panel-body">Texto automação</div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div style="cursor:pointer" data-toggle="collapse" data-parent="#accordion3" href="#collapseSeguranca2" class="panel-heading collapseSeguranca">
-                                <h4 class="panel-title">
-                                    Controle de acesso <span class="glyphicon glyphicon-plus"></span>
-                                </h4>
-                            </div>
-                            <div id="collapseSeguranca2" class="panel-collapse collapse">
-                                <div class="panel-body">Texto controle de acesso</div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div style="cursor:pointer"  data-toggle="collapse" data-parent="#accordion3" href="#collapseSeguranca3" class="panel-heading collapseSeguranca">
-                                <h4 class="panel-title">
-                                    Dispositivos de monitoramento <span class="glyphicon glyphicon-plus"></span>
-                                </h4>
-                            </div>
-                            <div id="collapseSeguranca3" class="panel-collapse collapse">
-                                <div class="panel-body">Texto dispositivos de monitoramento</div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="panel-body"> 
                     
+                        <div id="informatica" class="container col-md-6 col-12 boxServicos">
+                            <h3>Tecnologias Back-end <span class="glyphicon glyphicon-globe"></span></h3>
+
+                            <div class="panel-group accordion" id="accordion1">
+                                <div class="panel panel-default">
+                                    <div style="cursor:pointer" data-toggle="collapse" data-parent="#accordion1" href="#collapseInformatica1" class="panel-heading collapseInformatica">
+                                        <h4 class="panel-title">
+                                            ASP.NET MVC <span class="glyphicon glyphicon-remove"></span>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseInformatica1" class="panel-collapse collapse in">
+                                        <div class="panel-body">Texto</div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div style="cursor:pointer" data-toggle="collapse" data-parent="#accordion1" href="#collapseInformatica2" class="panel-heading collapseInformatica">
+                                        <h4 class="panel-title">
+                                            NODEJS <span class="glyphicon glyphicon-plus"></span>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseInformatica2" class="panel-collapse collapse">
+                                        <div class="panel-body">Texto</div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+
+                        </div>
+
+                        <div id="programacao" class="container col-md-6 col-12 boxServicos">
+                            <h3>Tecnologias Front-end <span class="glyphicon glyphicon-globe"></span></h3>
+
+                            <div class="panel-group accordion" id="accordion2">
+                                <div class="panel panel-default">
+                                    <div style="cursor:pointer" data-toggle="collapse" data-parent="#accordion2" href="#collapseProgramacao1" class="panel-heading collapseProgramacao">
+                                        <h4 class="panel-title">
+                                            Angular <span class="glyphicon glyphicon-remove"></span>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseProgramacao1" class="panel-collapse collapse in">
+                                        <div class="panel-body">Texto</div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div style="cursor:pointer" data-toggle="collapse" data-parent="#accordion2" href="#collapseProgramacao2" class="panel-heading collapseProgramacao">
+                                        <h4 class="panel-title">
+                                            Bootstrap <span class="glyphicon glyphicon-plus"></span>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseProgramacao2" class="panel-collapse collapse">
+                                        <div class="panel-body">Texto</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                
+                  <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Ocupação</h3>
+                    </div>
+                    <div class="panel-body"> Desenvolvedor back-end e front-end na fgxtecnologia.com.br  </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="secao secaoProjetos" style="min-height: 500px;">
+            <div class="container">
+            <h2>Projetos</h2>
+            <div id="projetosConteudo">
+                
             </div>
             
             </div>
@@ -434,7 +433,7 @@
                 <h2 style="margin-bottom: 30px" >Contato</h2>
 
                 <div style="margin-bottom: 30px; padding: 0px;" id="imagemContato" class="container col-md-8 col-12">
-                    <img src="images/imgContato.png" width="100%">
+                    <img src="images/imgContato.jpg" width="100%">
                 </div>
 
                 <div id="Controles" class="container col-md-4 col-12" style="min-height: 400px;">
@@ -540,7 +539,7 @@
 				$(function(){
 
 					$("#typed").typed({
-					strings: ["Em breve, todo o nosso portifólio e ferramentas estarão centralizados neste site.", "Até lá, comunique-se conosco por aqui:", "contato@fgxtecnologia.com.br"],
+					strings: ["Em breve, todo portifólio e ferramentas estarão centralizados neste site.", "Até lá, comunique-se conosco por aqui:", "felipe@fgxtecnologia.com.br"],
 					typeSpeed: 30,
 					callback: function(){
 					shift();
