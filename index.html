@@ -1,3 +1,46 @@
+
+<!-------
+
+                                                                                                                                                         
+                                                                                         */                                       (                            
+                                                                                       #@*                                         &@.                         
+                               /&@%,*%@/                                             /@#                                            ,@&                        
+                             .@@@   &@@@/                                           @@,                                               &@*                      
+                            .@@@(  /@@@@.                                         ,@@.                                                 %@#                     
+                            %@@&.   ,/*                                          .@@*                                                   @@#                    
+                           .@@@*                                                 @@(                                                    .@@/                   
+                           #@@@                                                .&@&                                                      /@@,                  
+                           @@@%                                                &@@*                                                       @@&                  
+                     .****(@@@#*****.                   .(&@@@%.              ,@@@                     *&@@@&/     .#@@@@(                (@@*                 
+                     .....&@@@,.....                 .&@@.     *@(%@@@        &@@#                  .@#     .@@% .@/   ,&@@#              .@@&                 
+                          @@@(                     ,@@@,         &@@@/        @@@*                 %&        (@@@@.   ,@@@@#               @@@                 
+                         /@@@.                    #@@@.          %@@@        ,@@@.                %%         &@@@*     ,%(.                &@@*                
+                         &@@&                    #@@@*          .@@@(        *@@@.               .@         .@@@@                          %@@*                
+                        .@@@/                   (@@@&           #@@@         /@@@                           (@@@/                          %@@*                
+                        (@@@.                  /@@@@.          /@@@(         *@@@.                          @@@#                           %@@*                
+                        @@@&                   &@@@&           @@@@          ,@@@.                         (@@@                            &@@*                
+                       ,@@@*                   @@@@*          /@@@(           @@@*                         @@@#         .&                 @@@                 
+                       %@@@                    #@@@,         .@@@@            &@@#               .#(.     #@@@.         @/                .@@&                 
+                       @@@#                     (@@(        (@@@@(            ,@@@             .&@@@@    *@@@@        .@*                 /@@*                 
+                      /@@@.                      .@@#    ,&&.@@@@              &@@*            .&@@&    %& ,@@/     .&%                   @@&                  
+                      &@@&                          /&&@#,  *@@@#              ,@@&              (@@%%@&,    (@@&%&@#                    *@@*                  
+                     .@@@.                                  @@@&                ,@@/                                                     @@#                   
+                     (@@#                                  *@@@,                 ,@@.                                                   &@%                    
+             @@@@(   @@&                    .&@@&         ,@@@/                   ,@@.                                                 %@#                     
+            #@@@@*  %@%                     @@@@@.       #@@@.                      @@,                                               &@*                      
+             @&.  ,@@.                      #@@,     ./@@@(                          /@#                                            ,@&                        
+               ....                             ...,..                                 #@*                                         &@.                         
+                                                                                         */                                       (                            
+                                                                                                                                                              
+
+
+    Contato: contatofgxtecnologia.com.br
+    Felipe Resende Rabelo
+    E-mail: feliperabelo03@gmail.com
+    Data: 22/09/2018.
+
+
+------>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,29 +58,13 @@
 
   <script src="semantic.min.js"></script>
     
-
-    
-     <!-- background pontos em movimento -->
-    <script type="text/javascript">
-            $(function() {
-                var cores = [ '#828282', '#696969', '#4F4F4F', '#363636','#1C1C1C','#000000','#1C1C1C', '#363636','#4F4F4F','#696969'];
-                var tamanhoArray = cores.length;
-                var contadorA = 0;
-                setInterval(function() {
-                    $(".particles").css("background-color", cores[contadorA]);
-                    
-                    contadorA++;
-                    if (contadorA > tamanhoArray) {
-                        contadorA = 0;
-                    }
-                }, 3000);
-                // VAI CHAMAR A FUNÇÃO DE 3 EM 3 SEGUNDOS !
-
-
-            });
-      </script>
-    
-    <style>
+<!-- ---------------------------------------------------------------------- -->
+<!-- ----                                                              ---- -->
+<!-- ----                        Style geral                           ---- -->
+<!-- ----                                                              ---- -->
+<!-- ---------------------------------------------------------------------- -->
+        
+  <style>
     
         .stackable.menu{
             position: fixed;
@@ -150,67 +177,84 @@
         .ui.card.portfolio{
             margin: 20px!important;
         }
+      
+        
+      .portfolio.projetos{
+        width: 100%;
+      }
+      
+      .contato{
+          margin: auto!important;
+          width: 100%!important;
+          max-width: 500px!important;
+      }
         
                
     </style>
-      <!-- Style SVG -->
-        <style>
+    
+<!-- ---------------------------------------------------------------------- -->
+<!-- ----                                                              ---- -->
+<!-- ----                        Style SVG                             ---- -->
+<!-- ----                                                              ---- -->
+<!-- ---------------------------------------------------------------------- -->
 
-            .demo-drawings body{
-               background: black;
-            }
-            .demo-drawings .codrops-header{
-               background: #03c4eb;
-            }
+  <style>
 
-            #containerIllustration{
+        .demo-drawings body{
+           background: black;
+        }
+        .demo-drawings .codrops-header{
+           background: #03c4eb;
+        }
 
-                margin: auto
-            }
+        #containerIllustration{
 
-
-            svg {
-                pointer-events: none;
-            }
-
-            .drawings {
-                position: relative;
-                max-height: 600px;
-            }
-
-            .illustration {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                max-height: 100%;
-                max-width: 100%;
-                opacity: 0;
-                -webkit-transform: translateX(-50%) translateY(-50%);
-                transform: translateX(-50%) translateY(-50%);
-            }
-
-            .show {
-                opacity: 1;
-            }
-
-            .hide {
-                opacity: 0;
-            }
-
-            .line-drawing,
-            .illustration {
-                -webkit-transition: opacity 0.5s;
-                transition: opacity 0.5s;
-            }
-
-            .line-drawing path {
-                fill: rgba(201, 76, 76, 0.01);
-                stroke: white;
-                stroke-width: 15;
-            }
+            margin: auto
+        }
 
 
-        </style>
+        svg {
+            pointer-events: none;
+        }
+
+        .drawings {
+            position: relative;
+            max-height: 600px;
+        }
+
+        .illustration {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            max-height: 100%;
+            max-width: 100%;
+            opacity: 0;
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        .show {
+            opacity: 1;
+        }
+
+        .hide {
+            opacity: 0;
+        }
+
+        .line-drawing,
+        .illustration {
+            -webkit-transition: opacity 0.5s;
+            transition: opacity 0.5s;
+        }
+
+        .line-drawing path {
+            fill: rgba(201, 76, 76, 0.01);
+            stroke: white;
+            stroke-width: 15;
+        }
+
+
+    </style>
     
 
 </head>
@@ -226,6 +270,14 @@
         <div class="ui text loader">Carregando</div>
     </div>
     
+    
+    <!-- ---------------------------------------------------------------------- -->
+    <!-- ----                                                              ---- -->
+    <!-- ----                        Menu e Header                         ---- -->
+    <!-- ----                                                              ---- -->
+    <!-- ---------------------------------------------------------------------- -->
+    
+    
     <div id="menuStackable" class="ui stackable  menu">
       <div class="item">
         <i class="spy icon"></i>
@@ -234,14 +286,16 @@
         <div class="itemMenu">
             <a id= "sec01" class="item" href=".sec01">Sobre</a>
             <a id= "sec02" class="item" href=".sec02">Projetos</a>
-            <a id= "sec03" class="item" href=".sec03">Portfólio</a>
+            <a id= "sec03" class="item" href=".sec03">Portfólio - trabalhos</a>
+            <a id= "sec04" class="item" href=".sec04">Portfólio - projetos</a>
+            <a id= "sec05" class="item" href=".sec05">Contato</a>
+            
         </div>
     </div>
     
     <header class="particles">
-    
         
-    <div class="introduction">
+        <div class="introduction">
       
       <h1 id="inverted" class="ui inverted header">
         <div id="containerIllustration">
@@ -292,276 +346,366 @@
       
   </div>
         
-    
     </header>
    
-    
+    <!-- ---------------------------------------------------------------------- -->
+    <!-- ----                                                              ---- -->
+    <!-- ----                        Conteúdo                              ---- -->
+    <!-- ----                                                              ---- -->
+    <!-- ----   Section sobre, projetos e portfólio                        ---- -->
+    <!-- ---------------------------------------------------------------------- -->
  
     <div id="conteudo" class="ui container" style="padding-top: 60px;">    
   
-    <!--sobre-->        
-    <section class="sec01 sec">
+        <!--sobre-->        
+        <section class="sec01 sec">
 
-        <h2 class="ui dividing header">Sobre
-            <a class="anchor" id="introduction"></a>
-            <a class="anchor" id="introduction"></a>
-        </h2>
+            <h2 class="ui dividing header">Sobre
+                <a class="anchor" id="introduction"></a>
+                <a class="anchor" id="introduction"></a>
+            </h2>
 
-        <h4 class="ui header">Formação</h4>
+            <h4 class="ui header">Formação</h4>
+            
+            <p>Pós-graduado em Desenvolvimento de Aplicações Web, em 2018, na instituição Pontifícia Universidade Católica de Minas Gerais.</p>
 
-        <p>Bacharel em Sistemas de Informação, em 2016, na instituição Pontifícia Universidade Católica de Minas Gerais.</p>
+            <p>Bacharel em Sistemas de Informação, em 2016, na instituição Pontifícia Universidade Católica de Minas Gerais.</p>
 
-        <h4 class="ui header">Área de conhecimento</h4>
+            <h4 class="ui header">Área de conhecimento</h4>
 
-        <div class="ui top attached tabular menu">
-            <a class="active item" data-tab="front-end" data-position="top left"><span><i class="pointing right icon"></i></span>Front-end</a>
-            <a class="item" data-tab="back-end"><span><i class="pointing right icon"></i></span>Back-end</a>
-        </div>
-
-
-        <div class="ui bottom attached active tab segment" data-tab="front-end" style="padding: 20px;">
-
-            <div class="ui styled accordion" style="width:100%;">
-                <div class="title active">
-                    <i class="dropdown icon"></i> Angular
-                </div>
-                <div class="content active">
-                    <p class="transition visible" style="display: block !important;">AngularJS é um framework JavaScript open-source, mantido pelo Google, que auxilia na execução de single-page applications. Seu objetivo é aumentar aplicativos que podem ser acessados por um navegador web, foi construído sob o padrão model-view-view-model (MVVM), em um esforço para facilitar tanto o desenvolvimento quanto o teste dos aplicativos.</p>
-                </div>
-                <div class="title">
-                    <i class="dropdown icon"></i> Semantic
-                </div>
-                <div class="content">
-                    <p>Super inovador, o Semantic UI faz parte de um esforço contínuo para tornar os sites de construção muito mais semânticos. Com descreve o seu mote “Uma estrutura de componente de UI baseada em princípios úteis da linguagem natural”, ele utiliza princípios de linguagem natural, tornando o código muito mais legível e compreensível.</p>
-                </div>
-                <div class="title">
-                    <i class="dropdown icon"></i> Bootstrap
-                </div>
-                <div class="content">
-                    <p>É um dos frameworks responsivos mais conhecidos e utilizados da atualidade. Bootstrap é um sistema desenvolvido em código aberto, hospedado, criado e mantido pelo GitHub.</p>
-                </div>
+            <div class="ui top attached tabular menu">
+                <a class="active item" data-tab="front-end" data-position="top left"><span><i class="pointing right icon"></i></span>Front-end</a>
+                <a class="item" data-tab="back-end"><span><i class="pointing right icon"></i></span>Back-end</a>
             </div>
 
 
+            <div class="ui bottom attached active tab segment" data-tab="front-end" style="padding: 20px;">
 
-        </div>
+                <div class="ui styled accordion" style="width:100%;">
+                    <div class="title active">
+                        <i class="dropdown icon"></i> Angular
+                    </div>
+                    <div class="content active">
+                        <p class="transition visible" style="display: block !important;">AngularJS é um framework JavaScript open-source, mantido pelo Google, que auxilia na execução de single-page applications. Seu objetivo é aumentar aplicativos que podem ser acessados por um navegador web, foi construído sob o padrão model-view-view-model (MVVM), em um esforço para facilitar tanto o desenvolvimento quanto o teste dos aplicativos.</p>
+                    </div>
+                    <div class="title">
+                        <i class="dropdown icon"></i> Semantic
+                    </div>
+                    <div class="content">
+                        <p>Super inovador, o Semantic UI faz parte de um esforço contínuo para tornar os sites de construção muito mais semânticos. Com descreve o seu mote “Uma estrutura de componente de UI baseada em princípios úteis da linguagem natural”, ele utiliza princípios de linguagem natural, tornando o código muito mais legível e compreensível.</p>
+                    </div>
+                    <div class="title">
+                        <i class="dropdown icon"></i> Bootstrap
+                    </div>
+                    <div class="content">
+                        <p>É um dos frameworks responsivos mais conhecidos e utilizados da atualidade. Bootstrap é um sistema desenvolvido em código aberto, hospedado, criado e mantido pelo GitHub.</p>
+                    </div>
+                </div>
 
 
-        <div class="ui bottom attached tab segment" data-tab="back-end" style="padding: 20px;">
 
-            <div class="ui styled accordion" style="width:100%;">
-                <div class="title active">
-                    <i class="dropdown icon"></i> ASP.NET MVC
+            </div>
+
+
+            <div class="ui bottom attached tab segment" data-tab="back-end" style="padding: 20px;">
+
+                <div class="ui styled accordion" style="width:100%;">
+                    <div class="title active">
+                        <i class="dropdown icon"></i> ASP.NET MVC
+                    </div>
+                    <div class="content active">
+                        <p class="transition visible" style="display: block !important;">A estrutura ASP.NET MVC é uma estrutura de apresentação leve e altamente testável que (à semelhança dos aplicativos baseados em Web Forms) é integrada aos recursos ASP.NET existentes, como páginas mestras e autenticação baseada em associação.</p>
+                    </div>
+                    <div class="title">
+                        <i class="dropdown icon"></i> Node.js
+                    </div>
+                    <div class="content">
+                        <p>Node.js é um interpretador de código JavaScript que funciona do lado do servidor. Seu objetivo é ajudar programadores na criação de aplicações de alta escalabilidade (como um servidor web[1]), com códigos capazes de manipular dezenas de milhares de conexões simultâneas, numa única máquina física.</p>
+                    </div>
+                    <div class="title">
+                        <i class="dropdown icon"></i> Laravel
+                    </div>
+                    <div class="content">
+                        <p>Laravel é um framework PHP livre e open-source criado por Taylor B. Otwell para o desenvolvimento de sistemas web que utilizam o padrão MVC (model, view, controller).</p>
+                    </div>
                 </div>
-                <div class="content active">
-                    <p class="transition visible" style="display: block !important;">A estrutura ASP.NET MVC é uma estrutura de apresentação leve e altamente testável que (à semelhança dos aplicativos baseados em Web Forms) é integrada aos recursos ASP.NET existentes, como páginas mestras e autenticação baseada em associação.</p>
+
+            </div>
+
+            <script>
+                $(".menu .item").tab();
+            </script>
+
+
+
+</section>
+
+        <!--projetos-->    
+        <section class ="sec02 sec">
+            <h2 class="ui dividing header">Projetos
+                <a class="anchor" id="introduction"></a>
+                <a class="anchor" id="introduction"></a>
+            </h2>
+            <table class="ui definition table">
+              <thead>
+                <tr><th></th>
+                <th>Descrição</th>
+              </tr></thead>
+              <tbody>
+                <tr>
+                  <td>Betto Optical</td>
+                  <td>Projeto e desenvolvimento de aplicação interna. (fgx tecnologia)</td>
+                </tr>
+                <tr>
+                  <td>Gestão de Cartões</td>
+                  <td>Projeto e desenvolvimento de aplicação para controle de pagamento de cartões de crédito. (fgx tecnologia)</td>
+                </tr>
+                <tr>
+                  <td>Treinamento Virtual</td>
+                  <td>Projeto e desenvolvimento de aplicação para treinamento virtual.</td>
+                </tr>
+                <tr>
+                  <td>Imobiliária - projeto</td>
+                  <td>Projeto e desenvolvimento de aplicação para imobiliárias.</td>
+                </tr>
+              </tbody>
+            </table>
+</section>
+
+        <!--portfólio trabalhos-->    
+        <section class ="sec03 sec">
+            <h2 class="ui dividing header">Portfólio - trabalhos
+                <a class="anchor" id="introduction"></a>
+                <a class="anchor" id="introduction"></a>
+            </h2> 
+
+
+            <div class="ui stackable two column vertically divided grid container">
+                <div class="row">
+                    <div class="ui card portfolio">
+                        <div class="image">
+                            <img src="img/fotoLazerepesca.jpeg">
+                        </div>
+                        <div class="content">
+                            <p class="header">Lazer e Pesca</p>
+                            <div class="meta">
+                                <span class="date"></span>
+                            </div>
+                            <div class="description">
+                                Aluguel de casas em Três Marias
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <a href="http://lazerepesca.com.br/">
+                                <i class="pointing right icon"></i> acessar...
+                            </a>
+                        </div>
+                    </div> 
+                    <div class="ui card portfolio">
+                        <div class="image">
+                            <img src="img/fotoSiteBettoOptical.jpeg">
+                        </div>
+                        <div class="content">
+                            <p class="header">Betto Optical</p>
+                            <div class="meta">
+                                <span class="date"></span>
+                            </div>
+                            <div class="description">
+                                Rede de Ótica
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <a href="http://www.bettooptical.com.br/">
+                                <i class="pointing right icon"></i> acessar...
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ui card portfolio">
+                        <div class="image">
+                            <img src="img/fotoSistemaBettoOptical.png">
+                        </div>
+                        <div class="content">
+                            <p class="header">Betto Optical</p>
+                            <div class="meta">
+                                <span class="date"></span>
+                            </div>
+                            <div class="description">
+                                Sistema interno
+                            </div>
+                        </div>
+                        <div class="extra content">
+
+                        </div>
+                    </div>
+                    <div class="ui card portfolio">
+                        <div class="image">
+                            <img src="img/fotoSiteAutoConfiaMG.jpeg">
+                        </div>
+                        <div class="content">
+                            <p class="header">AutoConfiaMG</p>
+                            <div class="meta">
+                                <span class="date"></span>
+                            </div>
+                            <div class="description">
+                                Site seguro automotivo
+                            </div>
+                        </div>
+                        <div class="extra content">
+
+                        </div>
+                    </div>
+                    <div class="ui card portfolio">
+                        <div class="image">
+                            <img src="img/fotoCasamentoAnaeThiago.jpeg">
+                        </div>
+                        <div class="content">
+                            <p class="header">Casamento</p>
+                            <div class="meta">
+                                <span class="date"></span>
+                            </div>
+                            <div class="description">
+                                Site casamento de Ana e Thiago
+                            </div>
+                        </div>
+                        <div class="extra content">
+
+                        </div>
+                    </div>
+                     <div class="ui card portfolio">
+                        <div class="image">
+                            <img src="img/fotoTreinamentoVirtual.png">
+                        </div>
+                        <div class="content">
+                            <p class="header">Treinamento Virtual</p>
+                            <div class="meta">
+                                <span class="date"></span>
+                            </div>
+                            <div class="description">
+                                Sistema de treinamento virtual - Trabalho de conclusão de curso Pós-graduação
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <a href="http://virtualtreinamento.tk/">
+                                <i class="pointing right icon"></i> acessar...
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="title">
-                    <i class="dropdown icon"></i> Node.js
-                </div>
-                <div class="content">
-                    <p>Node.js é um interpretador de código JavaScript que funciona do lado do servidor. Seu objetivo é ajudar programadores na criação de aplicações de alta escalabilidade (como um servidor web[1]), com códigos capazes de manipular dezenas de milhares de conexões simultâneas, numa única máquina física.</p>
-                </div>
-                <div class="title">
-                    <i class="dropdown icon"></i> Laravel
-                </div>
-                <div class="content">
-                    <p>Laravel é um framework PHP livre e open-source criado por Taylor B. Otwell para o desenvolvimento de sistemas web que utilizam o padrão MVC (model, view, controller).</p>
+                <div class="row">
+
                 </div>
             </div>
 
-        </div>
-
-        <script>
-            $(".menu .item").tab();
-        </script>
-
-
-
-    </section>
-     
-    <!--projetos-->    
-    <section class ="sec02 sec">
-        <h2 class="ui dividing header">Projetos
-            <a class="anchor" id="introduction"></a>
-            <a class="anchor" id="introduction"></a>
-        </h2>
-        <table class="ui definition table">
-          <thead>
-            <tr><th></th>
-            <th>Descrição</th>
-          </tr></thead>
-          <tbody>
-            <tr>
-              <td>Betto Optical</td>
-              <td>Projeto e desenvolvimento de aplicação interna. (fgx tecnologia)</td>
-            </tr>
-            <tr>
-              <td>Gestão de Cartões</td>
-              <td>Projeto e desenvolvimento de aplicação para controle de pagamento de cartões de crédito. (fgx tecnologia)</td>
-            </tr>
-            <tr>
-              <td>Treinamento Virtual</td>
-              <td>Projeto e desenvolvimento de aplicação para treinamento virtual.</td>
-            </tr>
-          </tbody>
-        </table>
-    </section>
-   
-    <!--portfólio-->    
-    <section class ="sec03 sec">
-        <h2 class="ui dividing header">Portfólio
-            <a class="anchor" id="introduction"></a>
-            <a class="anchor" id="introduction"></a>
-        </h2> 
+        </section>
         
+        <!--portfólio projetos-->    
+        <section class ="sec04 sec">
+            <h2 class="ui dividing header">Portfólio - projetos
+                <a class="anchor" id="introduction"></a>
+                <a class="anchor" id="introduction"></a>
+            </h2> 
 
-        <div class="ui stackable two column vertically divided grid container">
-            <div class="row">
-                <div class="ui card portfolio">
-                    <div class="image">
-                        <img src="img/fotoLazerepesca.jpeg">
-                    </div>
-                    <div class="content">
-                        <p class="header">Lazer e Pesca</p>
-                        <div class="meta">
-                            <span class="date"></span>
+
+            <div class="ui stackable two column vertically divided grid container">
+                
+                <div class="row">
+                    <div class="ui card portfolio projetos">
+                        <div class="image">
+                            <img src="img/fotoProjetoImobiliariaHome.png">
                         </div>
-                        <div class="description">
-                            Aluguel de casas em Três Marias
+                        <div class="content">
+                            <p class="header">Imobiliária - home</p>
+                            <div class="meta">
+                                <span class="date"></span>
+                            </div>
+                            <div class="description">
+                                
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            
+                        </div>
+                    </div> 
+                    <div class="ui card portfolio projetos">
+                        <div class="image">
+                            <img src="img/fotoProjetoImobiliariaAdmin.png">
+                        </div>
+                        <div class="content">
+                            <p class="header">Imobiliária - admin</p>
+                            <div class="meta">
+                                <span class="date"></span>
+                            </div>
+                            <div class="description">
+                                
+                            </div>
+                        </div>
+                        <div class="extra content">
                         </div>
                     </div>
-                    <div class="extra content">
-                        <a href="http://lazerepesca.com.br/">
-                            <i class="pointing right icon"></i> acessar...
-                        </a>
-                    </div>
-                </div> 
-                <div class="ui card portfolio">
-                    <div class="image">
-                        <img src="img/fotoSiteBettoOptical.jpeg">
-                    </div>
-                    <div class="content">
-                        <p class="header">Betto Optical</p>
-                        <div class="meta">
-                            <span class="date"></span>
-                        </div>
-                        <div class="description">
-                            Rede de Ótica
-                        </div>
-                    </div>
-                    <div class="extra content">
-                        <a href="http://www.bettooptical.com.br/">
-                            <i class="pointing right icon"></i> acessar...
-                        </a>
-                    </div>
+        
                 </div>
-                <div class="ui card portfolio">
-                    <div class="image">
-                        <img src="img/fotoSistemaBettoOptical.png">
-                    </div>
-                    <div class="content">
-                        <p class="header">Betto Optical</p>
-                        <div class="meta">
-                            <span class="date"></span>
-                        </div>
-                        <div class="description">
-                            Sistema interno
-                        </div>
-                    </div>
-                    <div class="extra content">
-                        
-                    </div>
-                </div>
-                <div class="ui card portfolio">
-                    <div class="image">
-                        <img src="img/fotoSiteAutoConfiaMG.jpeg">
-                    </div>
-                    <div class="content">
-                        <p class="header">AutoConfiaMG</p>
-                        <div class="meta">
-                            <span class="date"></span>
-                        </div>
-                        <div class="description">
-                            Site seguro automotivo
-                        </div>
-                    </div>
-                    <div class="extra content">
-                       
-                    </div>
-                </div>
-                <div class="ui card portfolio">
-                    <div class="image">
-                        <img src="img/fotoCasamentoAnaeThiago.jpeg">
-                    </div>
-                    <div class="content">
-                        <p class="header">Casamento</p>
-                        <div class="meta">
-                            <span class="date"></span>
-                        </div>
-                        <div class="description">
-                            Site casamento de Ana e Thiago
-                        </div>
-                    </div>
-                    <div class="extra content">
-                       
-                    </div>
-                </div>
-                 <div class="ui card portfolio">
-                    <div class="image">
-                        <img src="img/fotoTreinamentoVirtual.png">
-                    </div>
-                    <div class="content">
-                        <p class="header">Treinamento Virtual</p>
-                        <div class="meta">
-                            <span class="date"></span>
-                        </div>
-                        <div class="description">
-                            Sistema de treinamento virtual - Trabalho de conclusão de curso Pós-graduação
-                        </div>
-                    </div>
-                    <div class="extra content">
-                        <a href="http://virtualtreinamento.tk/">
-                            <i class="pointing right icon"></i> acessar...
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
                 
             </div>
-        </div>
+
+        </section>  
         
-        
-        
-    </section>    
+        <!--contato-->        
+        <section class="sec05 sec">
+
+            <h2 class="ui dividing header">Contato
+                <a class="anchor" id="introduction"></a>
+                <a class="anchor" id="introduction"></a>
+            </h2>
+            
+            <div class="ui card contato">
+                <div class="image">
+                    <img src="img/cartaofrente.jpg">
+                </div>
+            </div> 
+
+        </section>
+     
+    </div>
     
-   
-    
-     </div>
-    
+    <!-- ---------------------------------------------------------------------- -->
+    <!-- ----                                                              ---- -->
+    <!-- ----                        Footer                                ---- -->
+    <!-- ----                                                              ---- -->
+    <!-- ---------------------------------------------------------------------- -->
     
     <div class="ui black inverted vertical footer segment">
         <div class="ui center aligned container">
             <div class="ui horizontal inverted small divided link list">
-                <a class="item" href="http://fgxtecnologia.com.br/" target="_blank">Copyright © 2017 fg(x) Tecnologia</a>
+                <a class="item" href="http://fgxtecnologia.com.br/" target="_blank">Copyright © 2018 fg(x) Tecnologia</a>
             </div>
         </div>
     </div>
     
     
+    <!-- ---------------------------------------------------------------------- -->
+    <!-- ----                                                              ---- -->
+    <!-- ----               Particles canvas background                    ---- -->
+    <!-- ----                                                              ---- -->
+    <!-- ---------------------------------------------------------------------- -->
+    
+    
     <div id="particles" class="div_background"><canvas></canvas></div>
-
-        <script type="text/javascript" src="js/canvas.js"></script>
-        
-        <style>
-            canvas:not(.pg-canvas) {
-                display: none; 
-            }
-        </style>
-
     
     
+    <script type="text/javascript" src="js/canvas.js"></script>
+
+    <style>
+        canvas:not(.pg-canvas) {
+            display: none; 
+        }
+    </style>
+
+    
+    <!-- ---------------------------------------------------------------------- -->
+    <!-- ----                                                              ---- -->
+    <!-- ----                    Scripts gerais                            ---- -->
+    <!-- ----                                                              ---- -->
+    <!-- ---------------------------------------------------------------------- -->
     
     
     <!-- botão responsivo -->
@@ -616,8 +760,8 @@
         $(document).scroll(function() {
 
             
-            var sec = ['.sec01', '.sec02', '.sec03'];
-            var nav = ['.itemMenu #sec01', '.itemMenu #sec02', '.itemMenu #sec03'];
+            var sec = ['.sec01', '.sec02', '.sec03', '.sec04', '.sec05'];
+            var nav = ['.itemMenu #sec01', '.itemMenu #sec02', '.itemMenu #sec03', '.itemMenu #sec04', '.itemMenu #sec05'];
             
             for (var i= 0; i < sec.length; i++){
                 checkIfVisibleOnViewport(
@@ -693,10 +837,11 @@
     </script>
     
     <script>
-    $('.ui.accordion')
-  .accordion()
-; 
         
+        $('.ui.accordion')
+          .accordion()
+        ; 
+
     </script>
     
     <script>
@@ -715,6 +860,7 @@
         /* end script loader */
 
     </script>
+    
     <!-- script desenho svg -->
     <script type="text/javascript">
 
